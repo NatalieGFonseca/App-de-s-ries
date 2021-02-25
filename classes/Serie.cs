@@ -38,6 +38,7 @@ namespace App.Series
         private string Titulo { get; set; }
         private string Descricao { get; set; }
         private int ano { get; set; }
+        private bool Excluido { get; set; }
     }
 
 }
