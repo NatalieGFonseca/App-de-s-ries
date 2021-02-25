@@ -24,6 +24,16 @@ namespace App.Series
             return retorno;
         }
 
+        public string retornaTitulo()
+        {
+            return this.Titulo;
+        }
+
+        public int retornaId()
+        {
+            return this.id;
+        }
+
         private Genero genero { get; set; }
         private string Titulo { get; set; }
         private string Descricao { get; set; }
