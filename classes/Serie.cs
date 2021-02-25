@@ -11,7 +11,7 @@ namespace App.Series
             this.Titulo = titulo;
             this.Descricao = descricao;
             this.ano = ano;
-
+            this.Excluido = false;
         }
 
         public override string ToString()
