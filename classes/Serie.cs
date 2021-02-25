@@ -1,3 +1,5 @@
+using System;
+
 namespace App.Series
 {
     public class Serie : EntidadeBase
@@ -11,6 +13,17 @@ namespace App.Series
             this.ano = ano;
 
         }
+
+        public override string ToString()
+        {
+            string retorno = "";
+            retorno += "Gênero: " + this.genero + Environment.NewLine;
+            retorno += "Título: " + this.Titulo + Environment.NewLine;
+            retorno += "Descrição: " + this.Descricao + Environment.NewLine;
+            retorno += "Ano: " + this.ano;
+            return retorno;
+        }
+
         private Genero genero { get; set; }
         private string Titulo { get; set; }
         private string Descricao { get; set; }
