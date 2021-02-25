@@ -1,1 +1,1 @@
-# App-de-s-ries
+# App-de-series
