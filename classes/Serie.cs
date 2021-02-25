@@ -34,6 +34,11 @@ namespace App.Series
             return this.id;
         }
 
+        public void Excluir()
+        {
+            this.Excluido = true;
+        }
+        
         private Genero genero { get; set; }
         private string Titulo { get; set; }
         private string Descricao { get; set; }
