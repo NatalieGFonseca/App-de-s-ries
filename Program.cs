@@ -23,7 +23,7 @@ namespace App.Series
                         break;
 
                     case "3":
-                        //AtualizarSerie();
+                        AtualizarSerie();
                         break;
 
                     case "4":
@@ -88,6 +88,38 @@ namespace App.Series
                                     descricao: entDescricao);
 
             repositorio.Insere(nova);
+
+        }
+
+private static void AtualizarSerie()
+        {
+            Console.Write("Digite o id da série: ");
+            int indiceSerie = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Inserindo série");
+            foreach (int i in Enum.GetValues(typeof(Genero)))
+            {
+                Console.WriteLine("{0} - {1}", i, Enum.GetName(typeof(Genero), i));
+            }
+            Console.WriteLine("Digite o gênero entre as opções: ");
+            int entGenero = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o título: ");
+            string entTitulo = Console.ReadLine();
+
+            Console.WriteLine("Digite o ano: ");
+            int entAno = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a descrição: ");
+            string entDescricao = Console.ReadLine();
+
+            Serie atualiza = new Serie(id: indiceSerie,
+                                    genero: (Genero)entGenero,
+                                    titulo: entTitulo,
+                                    ano: entAno,
+                                    descricao: entDescricao);
+
+            repositorio.Atualiza(indiceSerie, atualiza);
 
         }
 
