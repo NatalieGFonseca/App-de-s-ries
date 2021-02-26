@@ -123,6 +123,14 @@ private static void AtualizarSerie()
 
         }
 
+        private static void ExcluirSerie()
+        {
+            Console.Write("Digite o id da série: ");
+            int indice = int.Parse(Console.ReadLine());
+
+            repositorio.Exclui(indice);
+        }
+
         private static string MenuDeOpcoes()
         {
             Console.WriteLine();
