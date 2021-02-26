@@ -27,11 +27,11 @@ namespace App.Series
                         break;
 
                     case "4":
-                        //ExcluirSerie();
+                        ExcluirSerie();
                         break;
 
                     case "5":
-                        //VisualizarSerie();
+                        VisualizarSerie();
                         break;
 
                     case "C":
@@ -129,6 +129,16 @@ private static void AtualizarSerie()
             int indice = int.Parse(Console.ReadLine());
 
             repositorio.Exclui(indice);
+        }
+
+        private static void VisualizarSerie()
+        {
+            Console.Write("Digite o id da série: ");
+            int indice = int.Parse(Console.ReadLine());
+
+            var serie = repositorio.RetornaPorId(indice);
+
+            Console.WriteLine(serie);
         }
 
         private static string MenuDeOpcoes()
