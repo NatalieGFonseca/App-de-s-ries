@@ -20,7 +20,8 @@ namespace App.Series
             retorno += "Gênero: " + this.genero + Environment.NewLine;
             retorno += "Título: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano: " + this.ano;
+            retorno += "Ano: " + this.ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
 
