@@ -91,7 +91,7 @@ namespace App.Series
 
         }
 
-private static void AtualizarSerie()
+        private static void AtualizarSerie()
         {
             Console.Write("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
@@ -159,5 +159,6 @@ private static void AtualizarSerie()
             Console.WriteLine();
             return opcao;
         }
+
     }
 }
