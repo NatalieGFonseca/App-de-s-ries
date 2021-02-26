@@ -1,0 +1,16 @@
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\App.Series.exe
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\App.Series.deps.json
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\App.Series.runtimeconfig.json
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\App.Series.runtimeconfig.dev.json
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\App.Series.dll
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\ref\App.Series.dll
+C:\Users\Natalie\App.Series\bin\Debug\net5.0\App.Series.pdb
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.csprojAssemblyReference.cache
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.AssemblyInfoInputs.cache
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.AssemblyInfo.cs
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.csproj.CoreCompileInputs.cache
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.dll
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\ref\App.Series.dll
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.pdb
+C:\Users\Natalie\App.Series\obj\Debug\net5.0\App.Series.genruntimeconfig.cache
