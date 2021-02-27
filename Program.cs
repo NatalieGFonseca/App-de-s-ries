@@ -6,46 +6,48 @@ namespace App.Series
     class Program
     {
         static SerieRepositorio repositorio = new SerieRepositorio();
+
         static void Main(string[] args)
         {
             string opcao = MenuDeOpcoes();
 
-            while (opcao.ToUpper() != "X")
-            {
-                switch (opcao)
+                while (opcao.ToUpper() != "X")
                 {
-                    case "1":
-                        ListarSeries();
-                        break;
+                    switch (opcao)
+                    {
+                        case "1":
+                            Listar();
+                            break;
 
-                    case "2":
-                        InserirSerie();
-                        break;
+                        case "2":
+                            Inserir();
+                            break;
 
-                    case "3":
-                        AtualizarSerie();
-                        break;
+                        case "3":
+                            Atualizar();
+                            break;
 
-                    case "4":
-                        ExcluirSerie();
-                        break;
+                        case "4":
+                            Excluir();
+                            break;
 
-                    case "5":
-                        VisualizarSerie();
-                        break;
+                        case "5":
+                            Visualizar();
+                            break;
 
-                    case "C":
-                        Console.Clear();
-                        break;
+                        case "C":
+                            Console.Clear();
+                            break;
 
-                    default:
-                        throw new ArgumentOutOfRangeException();
+                        default:
+                            throw new ArgumentOutOfRangeException();
+                    }
+                    opcao = MenuDeOpcoes();
                 }
-                opcao = MenuDeOpcoes();
-            }
+            
         }
 
-        private static void ListarSeries()
+        private static void Listar()
         {
             Console.WriteLine("Listagem");
             var lista = repositorio.Lista();
@@ -62,7 +64,8 @@ namespace App.Series
             }
         }
 
-        private static void InserirSerie()
+
+        private static void Inserir()
         {
             Console.WriteLine("Inserindo série");
             foreach (int i in Enum.GetValues(typeof(Genero)))
@@ -91,7 +94,9 @@ namespace App.Series
 
         }
 
-        private static void AtualizarSerie()
+    
+
+        private static void Atualizar()
         {
             Console.Write("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
@@ -123,7 +128,7 @@ namespace App.Series
 
         }
 
-        private static void ExcluirSerie()
+        private static void Excluir()
         {
             Console.Write("Digite o id da série: ");
             int indice = int.Parse(Console.ReadLine());
@@ -131,7 +136,7 @@ namespace App.Series
             repositorio.Exclui(indice);
         }
 
-        private static void VisualizarSerie()
+        private static void Visualizar()
         {
             Console.Write("Digite o id da série: ");
             int indice = int.Parse(Console.ReadLine());
@@ -146,11 +151,11 @@ namespace App.Series
             Console.WriteLine();
             Console.WriteLine("MENU");
             Console.WriteLine("Informe a opção: ");
-            Console.WriteLine("1- Listar séries");
-            Console.WriteLine("2- Inserir nova série");
-            Console.WriteLine("3- Atualizar série");
-            Console.WriteLine("4- Excluir série");
-            Console.WriteLine("5- Visualizar série");
+            Console.WriteLine("1- Listar");
+            Console.WriteLine("2- Inserir");
+            Console.WriteLine("3- Atualizar");
+            Console.WriteLine("4- Excluir");
+            Console.WriteLine("5- Visualizar");
             Console.WriteLine("C- Limpar tela");
             Console.WriteLine("X- Sair");
             Console.WriteLine();
